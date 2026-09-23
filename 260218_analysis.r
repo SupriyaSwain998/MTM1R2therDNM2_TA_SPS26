@@ -528,7 +528,9 @@ hist(
   rescue_table_prot$rescue_metric,
   breaks = 100,
   main = "Distribution of rescue metric",
-  xlab = "Rescue metric"
+  xlab = "Rescue metric",
+  font.main = 1,    # 1 = plain (default is 2 = bold)
+  cex.main = 0.9    # title size; lower = smaller (e.g. 0.8)
 )
 
 abline(v = 0, col = "red", lwd = 2)
